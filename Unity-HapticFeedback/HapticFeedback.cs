@@ -1,5 +1,5 @@
 ﻿using System.Runtime.InteropServices;
-using UnityEngine;
+
 public enum ImpactFeedbackStyle
 {
     heavy,
@@ -16,7 +16,7 @@ public enum NotificationFeedbackStyle
     warning
 }
 
-public class HapticFeedback : MonoBehaviour
+public class HapticFeedback
 {
 #if true//UNITY_IPHONE && !UNITY_EDITOR
     public static void ImpactOccurred(ImpactFeedbackStyle style)
