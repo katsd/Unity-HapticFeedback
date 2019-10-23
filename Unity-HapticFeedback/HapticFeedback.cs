@@ -18,7 +18,7 @@ public enum NotificationFeedbackStyle
 
 public class HapticFeedback
 {
-#if true//UNITY_IPHONE && !UNITY_EDITOR
+#if UNITY_IPHONE && !UNITY_EDITOR
     public static void ImpactOccurred(ImpactFeedbackStyle style)
     {
         _impactOccurred(style.ToString());
