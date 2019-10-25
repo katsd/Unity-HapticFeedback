@@ -6,15 +6,15 @@ void _impactOccurred(const char *style)
 {
 
     UIImpactFeedbackStyle feedbackStyle;
-    if (strcmp(style, "heavy"))
+    if (strcmp(style, "heavy") == 0)
         feedbackStyle = UIImpactFeedbackStyleHeavy;
-    else if (strcmp(style, "medium"))
+    else if (strcmp(style, "medium") == 0)
         feedbackStyle = UIImpactFeedbackStyleMedium;
-    else if (strcmp(style, "light"))
+    else if (strcmp(style, "light") == 0)
         feedbackStyle = UIImpactFeedbackStyleLight;
-    else if (strcmp(style, "rigid"))
+    else if (strcmp(style, "rigid") == 0)
         feedbackStyle = UIImpactFeedbackStyleRigid;
-    else if (strcmp(style, "soft"))
+    else if (strcmp(style, "soft") == 0)
         feedbackStyle = UIImpactFeedbackStyleSoft;
     else
         return;
@@ -29,11 +29,11 @@ void _impactOccurred(const char *style)
 void _notificationOccurred(const char *style)
 {
     UINotificationFeedbackType feedbackStyle;
-    if (strcmp(style, "error"))
+    if (strcmp(style, "error") == 0)
         feedbackStyle = UINotificationFeedbackTypeError;
-    else if (strcmp(style, "success"))
+    else if (strcmp(style, "success") == 0)
         feedbackStyle = UINotificationFeedbackTypeSuccess;
-    else if (strcmp(style, "warning"))
+    else if (strcmp(style, "warning") == 0)
         feedbackStyle = UINotificationFeedbackTypeWarning;
     else
         return;
