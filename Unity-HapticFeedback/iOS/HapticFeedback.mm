@@ -13,9 +13,17 @@ void _impactOccurred(const char *style)
     else if (strcmp(style, "light") == 0)
         feedbackStyle = UIImpactFeedbackStyleLight;
     else if (strcmp(style, "rigid") == 0)
-        feedbackStyle = UIImpactFeedbackStyleRigid;
+        if (@available(iOS 13.0, *)) {
+            feedbackStyle = UIImpactFeedbackStyleRigid;
+        } else {
+            return;
+        }
     else if (strcmp(style, "soft") == 0)
-        feedbackStyle = UIImpactFeedbackStyleSoft;
+        if (@available(iOS 13.0, *)) {
+            feedbackStyle = UIImpactFeedbackStyleSoft;
+        } else {
+            return;
+        }
     else
         return;
 
