@@ -2,18 +2,18 @@
 
 public enum ImpactFeedbackStyle
 {
-    heavy,
-    medium,
-    light,
-    rigid,
-    soft
+    Heavy,
+    Medium,
+    Light,
+    Rigid,
+    Soft
 }
 
 public enum NotificationFeedbackStyle
 {
-    error,
-    success,
-    warning
+    Error,
+    Success,
+    Warning
 }
 
 public class HapticFeedback
