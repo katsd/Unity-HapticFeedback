@@ -11,24 +11,24 @@ Copy `Unity-HapticFeedback/` to your Unity project (`Assets/Plugins/`)
 ```cs
 //Impact Feedback
 
-HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.light);
+HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
 
-HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.medium);
+HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Medium);
 
-HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.heavy);
+HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Heavy);
 
-HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.rigid);
+HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Rigid);
 
-HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.soft);
+HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Soft);
 
 
 //Notification Feedback
 
-HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.error);
+HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.Error);
 
-HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.success);
+HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.Success);
 
-HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.warning);
+HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.Warning);
 
 
 //Selection Feedback
